@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("/res/Inconsolata-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("res/Inconsolata-ExtraBold.ttf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("res/Inconsolata-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    font-weight: normal;
+    src: url("res/CrimsonText-Regular.ttf");
+}
+
+html {
+    --bg: #202020;
+    background: var(--bg);
+    --menu-width: 60%;
+    font-family: 'Inconsolata';
+    --header: limegreen;
+}
+
+html>* {
+    font-family: 'Inconsolata';
+}
+
+body {
+    color: var(--text);
+    --text: #fffae7;
+    --menu-width: 60%;
+    --main-accent: #666666;
+    --diff-border: gray;
+    /* diff: differentiation */
+    color: var(--text);
+}
+
+#mask {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    background: #000000;
+    z-index: 1;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#page-header {
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+#content-wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+#text {
+    line-height: 1.6;
+    font-size: 1.25em;
+    color: var(--text);
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Crimson Text', serif;
+}
