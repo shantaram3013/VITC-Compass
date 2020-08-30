@@ -4,11 +4,11 @@
     <description>
         An app for freshmen of VIT Chennai to learn about their college.
     </description>
-    <icon src="www/img/logo.png"/>
+    <icon src="www/img/logo.png" platform="android"/>
     <author email="simsid66@gmail.org" href="https://shantaram.xyz">
         Siddharth Singh
     </author>
-    <content src="index.html" />
+    <content src="index.html"/>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

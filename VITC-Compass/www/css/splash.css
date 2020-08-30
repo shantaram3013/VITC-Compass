@@ -1,0 +1,24 @@
+#splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    z-index: 3;
+    position: absolute;
+    height: auto;
+    width: 90%;
+    top: 30%;
+    left: 5%;
+}
+
+#splash img {
+    max-width: 60%;
+    max-height: 100%;
+}
+
+#splash-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--header);
+    margin: 20px;
+}
